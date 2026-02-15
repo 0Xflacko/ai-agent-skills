@@ -1,0 +1,566 @@
+{
+  "generatedAt": "2026-02-15T17:02:04.500Z",
+  "startUrl": "https://app.klingai.com/global/dev/document-api/quickStart/productIntroduction/overview",
+  "mainIndexJs": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/index-CyGZTn5T.js",
+  "docsRouteChunk": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/Index-Bsdwq5mu.js",
+  "openApiChunk": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/OpenApi-CJm2vN96.js",
+  "language": "en",
+  "total": 40,
+  "apiTotal": 24,
+  "pages": [
+    {
+      "title": "Callback Protocol",
+      "slug": "apiReference/callbackProtocol",
+      "route": "/global/dev/document-api/apiReference/callbackProtocol",
+      "sourceMarkdownPath": "/src/docs/apiReference/callbackProtocol/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CHMarF21.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__callbackProtocol.md"
+    },
+    {
+      "title": "General Information",
+      "slug": "apiReference/commonInfo",
+      "route": "/global/dev/document-api/apiReference/commonInfo",
+      "sourceMarkdownPath": "/src/docs/apiReference/commonInfo/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-Dyq2OaES.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__commonInfo.md"
+    },
+    {
+      "title": "AI Multi-Shot",
+      "slug": "apiReference/model/aiMultiShot",
+      "route": "/global/dev/document-api/apiReference/model/aiMultiShot",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/aiMultiShot/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-bRObZeqp.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__aiMultiShot.md"
+    },
+    {
+      "title": "Avatar",
+      "slug": "apiReference/model/avatar",
+      "route": "/global/dev/document-api/apiReference/model/avatar",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/avatar/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-DwvCNKP5.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__avatar.md"
+    },
+    {
+      "title": "Element",
+      "slug": "apiReference/model/customElements",
+      "route": "/global/dev/document-api/apiReference/model/customElements",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/customElements/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CWTcDqVT.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__customElements.md"
+    },
+    {
+      "title": "Custom Voice",
+      "slug": "apiReference/model/customVoices",
+      "route": "/global/dev/document-api/apiReference/model/customVoices",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/customVoices/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-jxQSSPMu.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__customVoices.md"
+    },
+    {
+      "title": "Virtual Try-On",
+      "slug": "apiReference/model/functionalityTry",
+      "route": "/global/dev/document-api/apiReference/model/functionalityTry",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/functionalityTry/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-D5tADH05.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__functionalityTry.md"
+    },
+    {
+      "title": "Image Expansion",
+      "slug": "apiReference/model/imageExpand",
+      "route": "/global/dev/document-api/apiReference/model/imageExpand",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/imageExpand/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-DJrEJRqT.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__imageExpand.md"
+    },
+    {
+      "title": "Image Generation",
+      "slug": "apiReference/model/imageGeneration",
+      "route": "/global/dev/document-api/apiReference/model/imageGeneration",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/imageGeneration/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CtcJj0e1.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__imageGeneration.md"
+    },
+    {
+      "title": "Image Recognize",
+      "slug": "apiReference/model/imageRecognize",
+      "route": "/global/dev/document-api/apiReference/model/imageRecognize",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/imageRecognize/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-B11pwhNm.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__imageRecognize.md"
+    },
+    {
+      "title": "Image to Video",
+      "slug": "apiReference/model/imageToVideo",
+      "route": "/global/dev/document-api/apiReference/model/imageToVideo",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/imageToVideo/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-iIg551bU.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__imageToVideo.md"
+    },
+    {
+      "title": "Motion Control",
+      "slug": "apiReference/model/motionControl",
+      "route": "/global/dev/document-api/apiReference/model/motionControl",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/motionControl/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-B29-SKP4.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__motionControl.md"
+    },
+    {
+      "title": "Multi-Image to Image",
+      "slug": "apiReference/model/multiImageToImage",
+      "route": "/global/dev/document-api/apiReference/model/multiImageToImage",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/multiImageToImage/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-DZufxj2k.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__multiImageToImage.md"
+    },
+    {
+      "title": "Multi-Image to Video",
+      "slug": "apiReference/model/multiImageToVideo",
+      "route": "/global/dev/document-api/apiReference/model/multiImageToVideo",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/multiImageToVideo/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-DEN_4hrK.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__multiImageToVideo.md"
+    },
+    {
+      "title": "Multi-Elements",
+      "slug": "apiReference/model/multimodalToVideo",
+      "route": "/global/dev/document-api/apiReference/model/multimodalToVideo",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/multimodalToVideo/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CViiXGvb.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__multimodalToVideo.md"
+    },
+    {
+      "title": "O3",
+      "slug": "apiReference/model/O3",
+      "route": "/global/dev/document-api/apiReference/model/O3",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/O3/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-C9R6iNS0.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__O3.md"
+    },
+    {
+      "title": "Omni-Image (O1)",
+      "slug": "apiReference/model/OmniImage",
+      "route": "/global/dev/document-api/apiReference/model/OmniImage",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/OmniImage/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CxjemNu-.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__OmniImage.md"
+    },
+    {
+      "title": "Omni-Video (O1)",
+      "slug": "apiReference/model/OmniVideo",
+      "route": "/global/dev/document-api/apiReference/model/OmniVideo",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/OmniVideo/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-BCCh840o.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__OmniVideo.md"
+    },
+    {
+      "title": "Capability Map",
+      "slug": "apiReference/model/skillsMap",
+      "route": "/global/dev/document-api/apiReference/model/skillsMap",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/skillsMap/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-B7CCykGI.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/apiReference__model__skillsMap.md"
+    },
+    {
+      "title": "Text to Audio",
+      "slug": "apiReference/model/textToAudio",
+      "route": "/global/dev/document-api/apiReference/model/textToAudio",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/textToAudio/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CmKX5ZEJ.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__textToAudio.md"
+    },
+    {
+      "title": "Text to Video",
+      "slug": "apiReference/model/textToVideo",
+      "route": "/global/dev/document-api/apiReference/model/textToVideo",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/textToVideo/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-BJKbb210.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__textToVideo.md"
+    },
+    {
+      "title": "TTS",
+      "slug": "apiReference/model/TTS",
+      "route": "/global/dev/document-api/apiReference/model/TTS",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/TTS/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CRs6rGBI.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__TTS.md"
+    },
+    {
+      "title": "Video Extension",
+      "slug": "apiReference/model/videoDuration",
+      "route": "/global/dev/document-api/apiReference/model/videoDuration",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/videoDuration/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-BzT0Z3WY.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__videoDuration.md"
+    },
+    {
+      "title": "Video Effects",
+      "slug": "apiReference/model/videoEffects",
+      "route": "/global/dev/document-api/apiReference/model/videoEffects",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/videoEffects/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-KpS5L_ZF.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__videoEffects.md"
+    },
+    {
+      "title": "Video to Audio",
+      "slug": "apiReference/model/videoToAudio",
+      "route": "/global/dev/document-api/apiReference/model/videoToAudio",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/videoToAudio/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-Bu_r3aIM.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__videoToAudio.md"
+    },
+    {
+      "title": "Lip-Sync",
+      "slug": "apiReference/model/videoTolip",
+      "route": "/global/dev/document-api/apiReference/model/videoTolip",
+      "sourceMarkdownPath": "/src/docs/apiReference/model/videoTolip/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-BOliivA6.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__model__videoTolip.md"
+    },
+    {
+      "title": "Concurrency Rules",
+      "slug": "apiReference/rateLimits",
+      "route": "/global/dev/document-api/apiReference/rateLimits",
+      "sourceMarkdownPath": "/src/docs/apiReference/rateLimits/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-Bfiz96Rv.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/apiReference__rateLimits.md"
+    },
+    {
+      "title": "Update Announcement",
+      "slug": "apiReference/updateNotice",
+      "route": "/global/dev/document-api/apiReference/updateNotice",
+      "sourceMarkdownPath": "/src/docs/apiReference/updateNotice/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-j89EvrK-.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/apiReference__updateNotice.md"
+    },
+    {
+      "title": "Account Information Inquiry",
+      "slug": "apiReference/userInfoQuery",
+      "route": "/global/dev/document-api/apiReference/userInfoQuery",
+      "sourceMarkdownPath": "/src/docs/apiReference/userInfoQuery/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CLLkIHFT.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/apiReference__userInfoQuery.md"
+    },
+    {
+      "title": "dialog/0126",
+      "slug": "dialog/0126",
+      "route": "/global/dev/document-api/dialog/0126",
+      "sourceMarkdownPath": "/src/docs/dialog/0126/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-Dd1hnxOb.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/dialog__0126.md"
+    },
+    {
+      "title": "dialog/0211",
+      "slug": "dialog/0211",
+      "route": "/global/dev/document-api/dialog/0211",
+      "sourceMarkdownPath": "/src/docs/dialog/0211/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-BbyZ0508.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/dialog__0211.md"
+    },
+    {
+      "title": "Billing",
+      "slug": "productBilling/billingMethod",
+      "route": "/global/dev/document-api/productBilling/billingMethod",
+      "sourceMarkdownPath": "/src/docs/productBilling/billingMethod/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-8QSKOqUe.js",
+      "hasHtmlSnapshot": false,
+      "file": "references/pages/productBilling__billingMethod.md"
+    },
+    {
+      "title": "Prepaid Resource Packs",
+      "slug": "productBilling/prePaidResourcePackage",
+      "route": "/global/dev/document-api/productBilling/prePaidResourcePackage",
+      "sourceMarkdownPath": "/src/docs/productBilling/prePaidResourcePackage/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CS0xJCVz.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/productBilling__prePaidResourcePackage.md"
+    },
+    {
+      "title": "「Kling AI」Service Level Agreement (SLA)",
+      "slug": "protocols/paidLevelProtocol",
+      "route": "/global/dev/document-api/protocols/paidLevelProtocol",
+      "sourceMarkdownPath": "/src/docs/protocols/paidLevelProtocol/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-DeQCNYXm.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/protocols__paidLevelProtocol.md"
+    },
+    {
+      "title": "「Kling AI」 Terms of API Paid Service",
+      "slug": "protocols/paidServiceProtocol",
+      "route": "/global/dev/document-api/protocols/paidServiceProtocol",
+      "sourceMarkdownPath": "/src/docs/protocols/paidServiceProtocol/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-h5okCpoc.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/protocols__paidServiceProtocol.md"
+    },
+    {
+      "title": "「Kling AI」Privacy Policy",
+      "slug": "protocols/privacyPolicy",
+      "route": "/global/dev/document-api/protocols/privacyPolicy",
+      "sourceMarkdownPath": "/src/docs/protocols/privacyPolicy/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CaIOAEPl.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/protocols__privacyPolicy.md"
+    },
+    {
+      "title": "Feature List",
+      "slug": "quickStart/featureList",
+      "route": "/global/dev/document-api/quickStart/featureList",
+      "sourceMarkdownPath": "/src/docs/quickStart/featureList/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-CLTKVqGD.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/quickStart__featureList.md"
+    },
+    {
+      "title": "The Advantages of Kling AI",
+      "slug": "quickStart/productIntroduction/capabilitiesStatement",
+      "route": "/global/dev/document-api/quickStart/productIntroduction/capabilitiesStatement",
+      "sourceMarkdownPath": "/src/docs/quickStart/productIntroduction/capabilitiesStatement/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-C_2rXui5.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/quickStart__productIntroduction__capabilitiesStatement.md"
+    },
+    {
+      "title": "Overview",
+      "slug": "quickStart/productIntroduction/overview",
+      "route": "/global/dev/document-api/quickStart/productIntroduction/overview",
+      "sourceMarkdownPath": "/src/docs/quickStart/productIntroduction/overview/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-DPw3heg_.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/quickStart__productIntroduction__overview.md"
+    },
+    {
+      "title": "Quick Access Guide",
+      "slug": "quickStart/userManual",
+      "route": "/global/dev/document-api/quickStart/userManual",
+      "sourceMarkdownPath": "/src/docs/quickStart/userManual/en.md",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/en-Dmu8iraw.js",
+      "hasHtmlSnapshot": true,
+      "file": "references/pages/quickStart__userManual.md"
+    }
+  ],
+  "apiSchemas": [
+    {
+      "title": "AI Multi-Shot",
+      "slug": "apiReference/model/aiMultiShot",
+      "route": "/global/dev/document-api/apiReference/model/aiMultiShot",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DEQF3yeg.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__aiMultiShot.md"
+    },
+    {
+      "title": "Avatar",
+      "slug": "apiReference/model/avatar",
+      "route": "/global/dev/document-api/apiReference/model/avatar",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BSVgDXRR.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__avatar.md"
+    },
+    {
+      "title": "Element",
+      "slug": "apiReference/model/customElements",
+      "route": "/global/dev/document-api/apiReference/model/customElements",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DGUaHm48.js",
+      "endpointCount": 4,
+      "file": "references/api/apiReference__model__customElements.md"
+    },
+    {
+      "title": "Custom Voice",
+      "slug": "apiReference/model/customVoices",
+      "route": "/global/dev/document-api/apiReference/model/customVoices",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BJ1rax_c.js",
+      "endpointCount": 5,
+      "file": "references/api/apiReference__model__customVoices.md"
+    },
+    {
+      "title": "Virtual Try-On",
+      "slug": "apiReference/model/functionalityTry",
+      "route": "/global/dev/document-api/apiReference/model/functionalityTry",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DBZg_XyU.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__functionalityTry.md"
+    },
+    {
+      "title": "Image Expansion",
+      "slug": "apiReference/model/imageExpand",
+      "route": "/global/dev/document-api/apiReference/model/imageExpand",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-XCv4e_4v.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__imageExpand.md"
+    },
+    {
+      "title": "Image Generation",
+      "slug": "apiReference/model/imageGeneration",
+      "route": "/global/dev/document-api/apiReference/model/imageGeneration",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-CG7_tJXk.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__imageGeneration.md"
+    },
+    {
+      "title": "Image Recognize",
+      "slug": "apiReference/model/imageRecognize",
+      "route": "/global/dev/document-api/apiReference/model/imageRecognize",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-SN4OtWT6.js",
+      "endpointCount": 2,
+      "file": "references/api/apiReference__model__imageRecognize.md"
+    },
+    {
+      "title": "Image to Video",
+      "slug": "apiReference/model/imageToVideo",
+      "route": "/global/dev/document-api/apiReference/model/imageToVideo",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-sT7B2GvD.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__imageToVideo.md"
+    },
+    {
+      "title": "Motion Control",
+      "slug": "apiReference/model/motionControl",
+      "route": "/global/dev/document-api/apiReference/model/motionControl",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DQ0csnG9.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__motionControl.md"
+    },
+    {
+      "title": "Multi-Image to Image",
+      "slug": "apiReference/model/multiImageToImage",
+      "route": "/global/dev/document-api/apiReference/model/multiImageToImage",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-EXLUKyk7.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__multiImageToImage.md"
+    },
+    {
+      "title": "(Elements) Multi-Image to Video",
+      "slug": "apiReference/model/multiImageToVideo",
+      "route": "/global/dev/document-api/apiReference/model/multiImageToVideo",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DEEF3eTj.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__multiImageToVideo.md"
+    },
+    {
+      "title": "Multi-Elements",
+      "slug": "apiReference/model/multimodalToVideo",
+      "route": "/global/dev/document-api/apiReference/model/multimodalToVideo",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-Uqk6k5uK.js",
+      "endpointCount": 8,
+      "file": "references/api/apiReference__model__multimodalToVideo.md"
+    },
+    {
+      "title": "Omni Video (O3)",
+      "slug": "apiReference/model/O3",
+      "route": "/global/dev/document-api/apiReference/model/O3",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-dkFqP7op.js",
+      "endpointCount": 22,
+      "file": "references/api/apiReference__model__O3.md"
+    },
+    {
+      "title": "Omni-Image (O1)",
+      "slug": "apiReference/model/OmniImage",
+      "route": "/global/dev/document-api/apiReference/model/OmniImage",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-CDDfn45x.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__OmniImage.md"
+    },
+    {
+      "title": "Omni-Video",
+      "slug": "apiReference/model/OmniVideo",
+      "route": "/global/dev/document-api/apiReference/model/OmniVideo",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-B86SwPYh.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__OmniVideo.md"
+    },
+    {
+      "title": "Text to Audio",
+      "slug": "apiReference/model/textToAudio",
+      "route": "/global/dev/document-api/apiReference/model/textToAudio",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-9b4SXejh.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__textToAudio.md"
+    },
+    {
+      "title": "Video Generation - Text to Video",
+      "slug": "apiReference/model/textToVideo",
+      "route": "/global/dev/document-api/apiReference/model/textToVideo",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BbR1eXbu.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__textToVideo.md"
+    },
+    {
+      "title": "TTS",
+      "slug": "apiReference/model/TTS",
+      "route": "/global/dev/document-api/apiReference/model/TTS",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-B-NlHlJZ.js",
+      "endpointCount": 1,
+      "file": "references/api/apiReference__model__TTS.md"
+    },
+    {
+      "title": "Video Extension",
+      "slug": "apiReference/model/videoDuration",
+      "route": "/global/dev/document-api/apiReference/model/videoDuration",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-CLtF_Cus.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__videoDuration.md"
+    },
+    {
+      "title": "Video Effects",
+      "slug": "apiReference/model/videoEffects",
+      "route": "/global/dev/document-api/apiReference/model/videoEffects",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DhDWXhsI.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__videoEffects.md"
+    },
+    {
+      "title": "Video to Audio",
+      "slug": "apiReference/model/videoToAudio",
+      "route": "/global/dev/document-api/apiReference/model/videoToAudio",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DVtlUOrc.js",
+      "endpointCount": 3,
+      "file": "references/api/apiReference__model__videoToAudio.md"
+    },
+    {
+      "title": "Lip-Sync",
+      "slug": "apiReference/model/videoTolip",
+      "route": "/global/dev/document-api/apiReference/model/videoTolip",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-Bn9EYWAo.js",
+      "endpointCount": 4,
+      "file": "references/api/apiReference__model__videoTolip.md"
+    },
+    {
+      "title": "Account Information Query",
+      "slug": "apiReference/userInfoQuery",
+      "route": "/global/dev/document-api/apiReference/userInfoQuery",
+      "chunkUrl": "https://s16-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-P8QfKw7r.js",
+      "endpointCount": 1,
+      "file": "references/api/apiReference__userInfoQuery.md"
+    }
+  ]
+}

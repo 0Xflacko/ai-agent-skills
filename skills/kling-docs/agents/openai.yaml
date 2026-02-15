@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kling API Docs"
+  short_description: "Answer using official KLING docs and endpoint schemas"
+  default_prompt: "Use the Kling docs references to answer this question with exact endpoint and schema details."
