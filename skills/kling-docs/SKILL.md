@@ -28,13 +28,13 @@ Use this skill to answer questions from the KLING developer documentation corpus
 Rebuild references from live KLING docs:
 
 ```bash
-node scripts/build_kling_docs_refs.js
+node /Users/denoweb3/.codex/skills/kling-docs/scripts/build_kling_docs_refs.js
 ```
 
 For Chinese-language snapshots:
 
 ```bash
-node scripts/build_kling_docs_refs.js --zh
+node /Users/denoweb3/.codex/skills/kling-docs/scripts/build_kling_docs_refs.js --zh
 ```
 
 ## Notes

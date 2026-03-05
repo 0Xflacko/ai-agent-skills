@@ -1,0 +1,4 @@
+interface:
+  display_name: "WTF Games Casino Growth"
+  short_description: "Optimize casino messaging, offers, and conversion funnels."
+  default_prompt: "Help me improve WTF Games casino conversion and messaging."

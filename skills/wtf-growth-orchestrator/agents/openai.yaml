@@ -1,0 +1,4 @@
+interface:
+  display_name: "WTF Growth Orchestrator"
+  short_description: "Route cross-brand growth work across WTF Games and WTF Leagues."
+  default_prompt: "Help me with cross-brand growth strategy for WTF Games and WTF Leagues."

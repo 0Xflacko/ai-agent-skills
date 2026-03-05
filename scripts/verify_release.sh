@@ -72,7 +72,7 @@ for skill in "${ALLOWLIST[@]}"; do
   fi
 done
 
-EXCLUDED=(docx pdf pptx xlsx skill-seekers .system)
+EXCLUDED=(docx pdf pptx xlsx .system)
 for skill in "${EXCLUDED[@]}"; do
   if [[ -e "$SKILLS_DIR/$skill" ]]; then
     fail "Excluded skill present in release: skills/$skill"

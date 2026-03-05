@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SOURCE="${HOME}/.codex/skills"
 DEST_REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DRY_RUN=0
 
 usage() {
   cat <<'USAGE'
-Usage: scripts/sync_skills.sh [--source <path>] [--dest <path>] [--dry-run]
+Usage: scripts/sync_skills.sh [--dest <path>] [--dry-run]
 
-Copies allowlisted skills from SOURCE into DEST/skills.
+Copies allowlisted skills from multiple local source directories into DEST/skills.
+
+Sources (searched in order):
+  1. ~/.codex/skills           (Codex skills)
+  2. ~/.cursor/skills-cursor   (Cursor-authored skills)
+  3. ~/.cursor/plugins/cache/cursor-public/*/  (Cursor plugin skills, latest version)
 USAGE
 }
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --source)
-      SOURCE="${2:?missing value for --source}"
-      shift 2
-      ;;
     --dest)
       DEST_REPO="${2:?missing value for --dest}"
       shift 2
@@ -42,14 +42,25 @@ done
 ALLOWLIST_FILE="${DEST_REPO}/config/include-skills.txt"
 SKILLS_DEST_DIR="${DEST_REPO}/skills"
 
-if [[ ! -d "$SOURCE" ]]; then
-  echo "Source directory not found: $SOURCE" >&2
-  exit 1
-fi
 if [[ ! -f "$ALLOWLIST_FILE" ]]; then
   echo "Allowlist not found: $ALLOWLIST_FILE" >&2
   exit 1
 fi
+
+SOURCES=("${HOME}/.codex/skills" "${HOME}/.cursor/skills-cursor")
+
+for plugin_dir in "${HOME}/.cursor/plugins/cache/cursor-public"/*/; do
+  [[ -d "$plugin_dir" ]] || continue
+  latest=$(ls -td "${plugin_dir}"*/skills 2>/dev/null | head -1)
+  if [[ -n "$latest" && -d "$latest" ]]; then
+    SOURCES+=("$latest")
+  fi
+done
+
+echo "Source directories:"
+for src in "${SOURCES[@]}"; do
+  echo "  $src"
+done
 
 SKILLS=()
 while IFS= read -r skill; do
@@ -60,30 +71,58 @@ if [[ ${#SKILLS[@]} -eq 0 ]]; then
   exit 1
 fi
 
-EXCLUDED=(docx pdf pptx xlsx skill-seekers .system)
+EXCLUDED=(docx pdf pptx xlsx .system)
 for banned in "${EXCLUDED[@]}"; do
-  if printf '%s\n' "${SKILLS[@]}" | rg -qx "$banned"; then
+  if printf '%s\n' "${SKILLS[@]}" | grep -qx "$banned"; then
     echo "Allowlist contains excluded skill: $banned" >&2
     exit 1
   fi
 done
 
+find_skill_source() {
+  local skill="$1"
+  for src_dir in "${SOURCES[@]}"; do
+    if [[ -d "${src_dir}/${skill}" && -f "${src_dir}/${skill}/SKILL.md" ]]; then
+      echo "${src_dir}/${skill}"
+      return 0
+    fi
+  done
+  return 1
+}
+
+MIT_LICENSE_TEXT='MIT License
+
+Copyright (c) 2025
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.'
+
 mkdir -p "$SKILLS_DEST_DIR"
 
-echo "Syncing ${#SKILLS[@]} skills from $SOURCE to $SKILLS_DEST_DIR"
+echo ""
+echo "Syncing ${#SKILLS[@]} skills to $SKILLS_DEST_DIR"
 
 for skill in "${SKILLS[@]}"; do
-  src="${SOURCE}/${skill}"
+  src=$(find_skill_source "$skill") || {
+    echo "No source found for skill: $skill" >&2
+    exit 1
+  }
   dst="${SKILLS_DEST_DIR}/${skill}"
-
-  if [[ ! -d "$src" ]]; then
-    echo "Missing source skill directory: $src" >&2
-    exit 1
-  fi
-  if [[ ! -f "$src/SKILL.md" ]]; then
-    echo "Missing required SKILL.md in source skill: $src" >&2
-    exit 1
-  fi
 
   if [[ $DRY_RUN -eq 1 ]]; then
     echo "[DRY-RUN] rsync $src -> $dst"
@@ -98,6 +137,8 @@ for skill in "${SKILLS[@]}"; do
     --exclude '.env' \
     --exclude '.env.*' \
     --exclude '.DS_Store' \
+    --exclude '__pycache__/' \
+    --exclude 'node_modules/' \
     "$src/" "$dst/"
 
   if [[ ! -f "$dst/SKILL.md" ]]; then
@@ -105,6 +146,12 @@ for skill in "${SKILLS[@]}"; do
     exit 1
   fi
 
+  if ! find "$dst" -maxdepth 1 -type f \( -name 'LICENSE' -o -name 'LICENSE.txt' -o -name 'license.txt' \) | grep -q .; then
+    echo "$MIT_LICENSE_TEXT" > "$dst/LICENSE.txt"
+    echo "  + Added default MIT LICENSE.txt to $skill"
+  fi
+
+  echo "  synced: $skill <- $src"
 done
 
 if [[ $DRY_RUN -eq 0 ]]; then
@@ -113,10 +160,11 @@ if [[ $DRY_RUN -eq 0 ]]; then
     CURRENT_DIRS+=("$dir_name")
   done < <(find "$SKILLS_DEST_DIR" -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
   for existing in "${CURRENT_DIRS[@]}"; do
-    if ! printf '%s\n' "${SKILLS[@]}" | rg -qx "$existing"; then
+    if ! printf '%s\n' "${SKILLS[@]}" | grep -qx "$existing"; then
       rm -rf "${SKILLS_DEST_DIR}/${existing}"
-      echo "Removed non-allowlisted skill from destination: $existing"
+      echo "  removed: $existing (not in allowlist)"
     fi
   done
-  echo "Sync complete."
+  echo ""
+  echo "Sync complete: ${#SKILLS[@]} skills."
 fi

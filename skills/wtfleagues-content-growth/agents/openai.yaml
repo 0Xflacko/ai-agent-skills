@@ -1,0 +1,4 @@
+interface:
+  display_name: "WTF Leagues Content Growth"
+  short_description: "Scale livestream and social content systems for WTF Leagues."
+  default_prompt: "Help me plan high-performing content for WTF Leagues."
